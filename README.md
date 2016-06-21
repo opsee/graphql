@@ -1,4 +1,4 @@
-# graphql [![Build Status](https://travis-ci.org/graphql-go/graphql.svg)](https://travis-ci.org/graphql-go/graphql) [![GoDoc](https://godoc.org/graphql.co/graphql?status.svg)](https://godoc.org/github.com/graphql-go/graphql) [![Coverage Status](https://coveralls.io/repos/graphql-go/graphql/badge.svg?branch=master&service=github)](https://coveralls.io/github/graphql-go/graphql?branch=master) [![Join the chat at https://gitter.im/chris-ramon/graphql](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/graphql-go/graphql?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+# graphql [![Build Status](https://travis-ci.org/opsee/graphql.svg)](https://travis-ci.org/opsee/graphql) [![GoDoc](https://godoc.org/graphql.co/graphql?status.svg)](https://godoc.org/github.com/opsee/graphql) [![Coverage Status](https://coveralls.io/repos/opsee/graphql/badge.svg?branch=master&service=github)](https://coveralls.io/github/opsee/graphql?branch=master) [![Join the chat at https://gitter.im/chris-ramon/graphql](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/opsee/graphql?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 A *work-in-progress* implementation of GraphQL for Go.
 
@@ -6,7 +6,7 @@ A *work-in-progress* implementation of GraphQL for Go.
 
 To install the library, run:
 ```bash
-go get github.com/graphql-go/graphql
+go get github.com/opsee/graphql
 ```
 
 The following is a simple example which defines a schema with a single `hello` string-type field and a `Resolve` method which returns the string `world`. A GraphQL query is performed against this schema with the resulting output printed in JSON format.
@@ -19,7 +19,7 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/graphql-go/graphql"
+	"github.com/opsee/graphql"
 )
 
 func main() {
@@ -54,7 +54,7 @@ func main() {
 	fmt.Printf("%s \n", rJSON) // {“data”:{“hello”:”world”}}
 }
 ```
-For more complex examples, refer to the [examples/](https://github.com/graphql-go/graphql/tree/master/examples/) directory and [graphql_test.go](https://github.com/graphql-go/graphql/blob/master/graphql_test.go).
+For more complex examples, refer to the [examples/](https://github.com/opsee/graphql/tree/master/examples/) directory and [graphql_test.go](https://github.com/opsee/graphql/blob/master/graphql_test.go).
 
 ### Origin and Current Direction
 
@@ -63,8 +63,8 @@ This project was originally a port of [v0.4.3](https://github.com/graphql/graphq
 ### Third Party Libraries
 | Name          | Author        | Description  |
 |:-------------:|:-------------:|:------------:|
-| [graphql-go-handler](https://github.com/graphql-go/graphql-go-handler) | [Hafiz Ismail](https://github.com/sogko) | Middleware to handle GraphQL queries through HTTP requests. |
-| [graphql-relay-go](https://github.com/graphql-go/graphql-relay-go) | [Hafiz Ismail](https://github.com/sogko) | Lib to construct a graphql-go server supporting react-relay. |
+| [opsee-handler](https://github.com/opsee/opsee-handler) | [Hafiz Ismail](https://github.com/sogko) | Middleware to handle GraphQL queries through HTTP requests. |
+| [graphql-relay-go](https://github.com/opsee/graphql-relay-go) | [Hafiz Ismail](https://github.com/sogko) | Lib to construct a opsee server supporting react-relay. |
 | [golang-relay-starter-kit](https://github.com/sogko/golang-relay-starter-kit) | [Hafiz Ismail](https://github.com/sogko) | Barebones starting point for a Relay application with Golang GraphQL server. |
 
 ### Blog Posts
@@ -80,7 +80,7 @@ This project was originally a port of [v0.4.3](https://github.com/graphql/graphq
 - [x] Executor
 - [x] Validator
 - [ ] Examples
-  - [ ] Basic Usage (see: [PR-#21](https://github.com/graphql-go/graphql/pull/21)) 
+  - [ ] Basic Usage (see: [PR-#21](https://github.com/opsee/graphql/pull/21)) 
   - [ ] React/Relay
 - [ ] Alpha Release (v0.1)
 

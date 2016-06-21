@@ -3,9 +3,9 @@ package graphql_test
 import (
 	"testing"
 
-	"github.com/graphql-go/graphql"
-	"github.com/graphql-go/graphql/gqlerrors"
-	"github.com/graphql-go/graphql/testutil"
+	"github.com/opsee/graphql"
+	"github.com/opsee/graphql/gqlerrors"
+	"github.com/opsee/graphql/testutil"
 )
 
 func TestValidate_KnownFragmentNames_KnownFragmentNamesAreValid(t *testing.T) {
