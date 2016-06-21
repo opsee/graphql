@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"regexp"
 
-	"github.com/graphql-go/graphql/language/ast"
-	"github.com/graphql-go/graphql/language/location"
-	"github.com/graphql-go/graphql/language/source"
+	"github.com/opsee/graphql/language/ast"
+	"github.com/opsee/graphql/language/location"
+	"github.com/opsee/graphql/language/source"
 	"strings"
 )
 
